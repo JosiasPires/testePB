@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    cursor: none;
+}
+
+body {
+    background-color: white;
+    transition: 500ms;
+}
+
+a, .texto {
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.cursor {
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    transform: translate(-40%, -40%);
+    mix-blend-mode: difference;
+    transition: 100ms;
+}
+
+header, nav {
+    display: flex;
+}
+
+header {
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid black;
+    z-index: 3;
+    transition: 500ms;
+}
+
+nav {
+    gap: 4rem;
+}
+
+.menu-i {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.toggle {
+    background-image: url('moon.png');
+    position: absolute;
+    transition: 500ms;
+    background-size: contain;
+    z-index: 5;
+    width: 2rem;
+    height: 2rem;
+    right: 2rem;
+    top: 1.3rem;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+}
+
+.topico {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.paragrafo {
+    font-size: 1.2rem;
+}
+
+.direita {
+    text-align: right;
+}
+
+.girar {
+    transition: 600ms cubic-bezier(.75,-0.5,0,1.75);
+}
+
+.girar:hover {
+    transform: rotate(90deg);
+}
+
+img {
+    filter: invert(1);
+    mix-blend-mode: difference;
+}
